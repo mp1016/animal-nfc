@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chien Retrouvé</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0e4ce, #d4bfa3, #e6d3b3);
+      background-size: 300% 300%;
+      animation: gradientMove 12s ease infinite;
+      color: #3a2c1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 30px 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #5c3b1c;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .info {
+      margin: 20px 0;
+    }
+
+    .info i {
+      margin-right: 10px;
+      color: #a07951;
+    }
+
+    .phone-button {
+      display: inline-block;
+      background: #a87c56;
+      color: white;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-size: 18px;
+      border-radius: 10px;
+      transition: background 0.3s;
+      margin-top: 20px;
+    }
+
+    .phone-button:hover {
+      background: #8b6644;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #5e4a38;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🐶 Chien retrouvé !</h1>
+
+    <div class="info">
+      <p><i class="fas fa-user"></i> <strong>Propriétaire :</strong> Léa Dupont</p>
+      <p><i class="fas fa-dog"></i> <strong>Nom du chien :</strong> Rocky</p>
+      <p><i class="fas fa-phone"></i> <strong>Téléphone :</strong> 0470 12 34 56</p>
+    </div>
+
+    <a class="phone-button" href="tel:+32470123456">
+      📞 Appeler le propriétaire
+    </a>
+
+    <div class="footer">
+      Ⓒ NFC Pet Tag – Solution pour animaux perdus
+    </div>
+  </div>
+</body>
+</html>
